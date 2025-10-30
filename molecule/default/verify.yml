@@ -19,7 +19,7 @@
       ansible.builtin.package_facts:
         manager: auto
 
-    - name: Fail if code package is not installed
+    - name: Fail if 'code' package is not installed
       ansible.builtin.fail:
         msg: "code package is not installed"
       when: "'code' not in ansible_facts.packages"

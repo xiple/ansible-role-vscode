@@ -13,7 +13,7 @@
     dest: /etc/yum.repos.d/vscode.repo
     mode: '0644'
 
-- name: Install code package
+- name: Install VS Code
   ansible.builtin.dnf:
     name: code
     state: present

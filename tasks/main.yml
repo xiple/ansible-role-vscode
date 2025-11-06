@@ -5,12 +5,12 @@
 - name: Import microsoft key
   ansible.builtin.rpm_key:
     state: present
-    key: https://packages.microsoft.com/keys/microsoft.asc
+    key: "{{ vscode_microsoft_rpm_key_url }}"
 
 - name: Install vscode repo file
   ansible.builtin.copy:
     src: vscode.repo
-    dest: /etc/yum.repos.d/vscode.repo
+    dest: "{{ vscode_yum_repo_file_dest }}"
     mode: '0644'
 
 - name: Install VS Code

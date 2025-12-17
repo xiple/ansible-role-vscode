@@ -1,6 +1,8 @@
 Ansible role: VS Code
 =========
 
+[![CI](https://github.com/xiple/ansible-role-vscode/actions/workflows/ci.yml/badge.svg)](https://github.com/xiple/ansible-role-vscode/actions/workflows/ci.yml)
+
 An ansible role that installs VS Code on Linux.
 
 Requirements
